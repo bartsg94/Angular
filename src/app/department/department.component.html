@@ -1,0 +1,10 @@
+<h2>Lista di dipartimenti presenti sul db</h2>
+<ul class="items">
+  <li (click)="onSelect(d)" *ngFor="let d of departments">
+    <div class="col-2">
+      <div class="list-group-item list-group-item-action">
+        <span>{{d.id}} </span>{{d.nome}}
+      </div>
+    </div>
+  </li>
+</ul>
